@@ -14,6 +14,8 @@ Furthermore, I certify that this assignment was prepared by me specifically for 
 
 int main() {
 	
+	/* Initialising variables*/
+	
 	char ownerFName[10];
 	char ownerLName[20];
 	int dogWeight;
@@ -23,6 +25,7 @@ int main() {
 	int totalCost;
 	int costPDay;
 	
+	/*Asking for and getting appropriate user input*/
 	printf("Please enter the owner's name: ");
 	scanf("%s %s", ownerFName, ownerLName);
 	
@@ -35,6 +38,7 @@ int main() {
 	printf("Please enter the length of stay: ");
 	scanf("%d", &stayLength);
 
+	/*Calculates the cost per day*/
 	if(dogWeight < 25) {
 		
 		costPDay = 25;
@@ -49,8 +53,10 @@ int main() {
 		
 	}
 	
+	/*Applies the cost per day to get the total cost for the stay*/
 	totalCost = costPDay * stayLength;
 	
+	/*Prints final output*/
 	printf("Owner name: %s %s\n", ownerFName, ownerLName);
 	printf("Dog name: %s\n", dogName);
 	printf("Dog weight: %dlbs\n", dogWeight);
@@ -58,5 +64,6 @@ int main() {
 	printf("The cost per day is: %d\n", costPDay);
 	printf("The total cost of the visit is: $%d\n", totalCost);
 	
+	/*Ends program*/
 	return (0);
 }
