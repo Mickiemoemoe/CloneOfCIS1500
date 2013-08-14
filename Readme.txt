@@ -8,16 +8,18 @@ CIS1500		        Assignment 2
 ************
 Compilation
 ************
-in this space write down how to compile your program
+Open terminal, go to the correct directory, then compile with gcc
+type gcc a2.c
 
 ***********************
 Running the program(s)
 ***********************
-in this space describe how to run your program
+Compile the program
+Open the correct directory in terminal
+./a2.out
 
 
 *****************
 Known Limitations
 *****************
 
-in this space write down any of the limitations (unfinished bits) that your program has
