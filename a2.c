@@ -16,5 +16,47 @@ int main() {
 	
 	char ownerFName[10];
 	char ownerLName[20];
+	int dogWeight;
+	char dogName[10];
+	int stayLength;
 	
+	int totalCost;
+	int costPDay;
+	
+	printf("Please enter the owner's name: ");
+	scanf("%s %s", ownerFName, ownerLName);
+	
+	printf("Please enter the dog's name: ");
+	scanf("%s", dogName);
+	
+	printf("Please enter the dog's weight: ");
+	scanf("%d", &dogWeight);
+	
+	printf("Please enter the length of stay: ");
+	scanf("%d", &stayLength);
+
+	if(dogWeight < 25) {
+		
+		costPDay = 25;
+		
+	} else if(dogWeight > 80) {
+		
+		costPDay = 35;
+		
+	} else {
+		
+		costPDay = 30;
+		
+	}
+	
+	totalCost = costPDay * stayLength;
+	
+	printf("Owner name: %s %s\n", ownerFName, ownerLName);
+	printf("Dog name: %s\n", dogName);
+	printf("Dog weight: %dlbs\n", dogWeight);
+	printf("Stay Length: %d days\n", stayLength);
+	printf("The cost per day is: %d\n", costPDay);
+	printf("The total cost of the visit is: $%d\n", totalCost);
+	
+	return (0);
 }
